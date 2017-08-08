@@ -46,7 +46,7 @@ class Board
     # helper method to determine what #make_move returns
     if ending_cup_idx == 6 || ending_cup_idx == 13
       :prompt
-    elsif @cups[ending_cup_idx].count == 1
+    elsif @cups[ending_cup_idx].length == 1
       :switch
     else
       ending_cup_idx
@@ -66,8 +66,8 @@ class Board
   end
 
   def winner
-    p1_score = @cups[6].count
-    p2_score = @cups[13].count
+    p1_score = @cups[6].length
+    p2_score = @cups[13].length
     if p1_score == p2_score
       :draw
     else
