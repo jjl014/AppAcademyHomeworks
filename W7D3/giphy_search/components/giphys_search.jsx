@@ -27,9 +27,8 @@ class GiphysSearch extends React.Component {
 
   render() {
     const { giphys } = this.props;
-    console.log(giphys);
     return (
-      <div>
+      <div className="search">
         <form>
           <input type="text" onChange={this.updateSearch} value={this.state.search}></input>
           <button type="submit" onClick={this.handleSubmit}>Search Giphy</button>

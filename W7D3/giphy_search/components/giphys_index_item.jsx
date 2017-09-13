@@ -2,7 +2,7 @@ import React from 'react';
 
 const GiphyIndexItem = ({giphy}) => {
   return (
-    <li><img src={giphy.images.fixed_height.url} /></li>
+    <li className="giphy-li"><img src={giphy.images.fixed_height.url} /></li>
   );
 };
 

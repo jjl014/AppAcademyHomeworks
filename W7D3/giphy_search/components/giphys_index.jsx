@@ -4,7 +4,7 @@ import GiphysIndexItem from './giphys_index_item';
 
 const GiphysIndex = ({giphys}) => {
   return (
-    <ul>
+    <ul className="giphy-ul">
       { giphys.map( giphy => <GiphysIndexItem key={giphy.id} giphy={giphy}/>)}
     </ul>
   );
